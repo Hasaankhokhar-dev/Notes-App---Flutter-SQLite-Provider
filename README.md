@@ -1,16 +1,36 @@
-# notes_provider_app
+📝 Notes App - Flutter + SQLite + Provider
+A fully functional Notes App built with Flutter using sqflite for local database storage and Provider for state management with complete CRUD operations.
 
-A new Flutter project.
+📱 Features
+✅ Add new notes
+✅ View all notes
+✅ Edit existing notes
+✅ Delete notes
+✅ Data persists locally (offline support)
+✅ State management with Provider
+✅ Auto UI update on data change
+✅ Clean and simple UI
 
-## Getting Started
+🛠️ Tech Stack
+Technology        Usage
+Flutter           UI Framework
+Dart              Programming Language
+sqflite           Local SQLite Database
+path              Database file path
+Provider          State Management
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+📖 What I Learned
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+How to integrate sqflite in Flutter
+How to create Model Classes with toMap() and fromMap()
+How to perform CRUD operations with SQLite
+How to use Provider for state management
+How to use ChangeNotifier and notifyListeners()
+Difference between Consumer and Provider.of
+Difference between listen: true and listen: false
+How to use StatelessWidget with Provider
+How to use late keyword in Dart
+How to manage memory with dispose()
+How to use initState() for initialization
+Multi-screen navigation and passing data between screens
