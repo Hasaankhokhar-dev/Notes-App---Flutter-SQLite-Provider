@@ -15,7 +15,16 @@ class DbHelper {
 
   Future<Database> _initDb() async {
     String path = join(await getDatabasesPath(), 'notes.db');
-    return await openDatabase(path, version: 1, onCreate: _createTable);
+    return await openDatabase(
+      path,
+      version: 2,
+      onCreate: _createTable,
+      onUpgrade: (db, oldVersion, newVersion) async {
+        if (oldVersion < 2) {
+          await db.execute("ALTER TABLE notes ADD COLUMN date TEXT");
+        }
+      },
+    );
   }
 
   Future<void> _createTable(Database db, int version) async {
